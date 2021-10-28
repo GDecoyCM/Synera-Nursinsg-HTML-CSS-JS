@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER-NAV */
+
+header,h1 h2 {
+    color: white;
+    font-family: 'Florencesans Black', sans-serif;
+}
+
+body {
+    background: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Russo One', sans-serif;
+}
+
+p{
+    font-family: 'Futura LT', sans-serif;
+}
+
+.container {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.Header-Nursery hr{
+    width: 550px;
+    height: 2px;
+    margin: 0 auto;
+}
+
+#Home {
+    text-align: center;
+    background: darkcyan;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.enlaces {
+    background: white;
+    color: darkcyan;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.enlaces:hover{
+    background: darkcyan;
+    color: white;
+    cursor: pointer;
+}
+
+.ns{
+    display: block;
+    text-align: center;
+    font-family: 'Florencesans Black', sans-serif;;
+}
+
+.categorys {
+    text-align: center;
+}
+
+.active {
+    background: #9cdbd9;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+header form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.item-contenido {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Content & Services */
+
+.welcome {
+    background:url(/imgs/Resources/fondo.png);
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    filter:alpha(opacity=20);
+}
+
+
+.welcome .welcome-title{
+    width: 50%;
+    margin:auto;
+    text-align: center;
+}
+.welcome .welcome-title h2{
+    font-size: 50px;
+    font-family: 'Florencesans Black', sans-serif;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 10px;
+}
+.welcome .welcome-title hr{
+    width: 60%;
+    height: 2px;
+    margin:auto;
+    background: white;
+}
+.welcome .box-welcome{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.welcome .box-welcome .card-welcome{
+    width: 30%;
+    margin: 10px;
+}
+
+.welcome .box-welcome .card-welcome .welcome-text{
+    border: 2px solid darkcyan;
+    padding:20px;
+    border-radius: 20px;
+    transition: 0.1s;
+    cursor: pointer;
+    opacity: 1;
+}
+.welcome .box-welcome .card-welcome .welcome-text h4{
+    font-size: 30px;
+    font-family: 'Florencesans Black', sans-serif;
+    font-weight: 400;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: 0.1s;
+}
+.welcome .box-welcome .card-welcome .welcome-text p{
+    font-size: 20px;
+    font-family: 'Futura LT', sans-serif;
+    text-align: center;
+    line-height: 40px;
+    color: whitesmoke;
+}
+.welcome .box-welcome .card-welcome .welcome-text:hover{
+    border: 2px solid whitesmoke;
+    background: #585a56;
+}
+.welcome .box-welcome .card-welcome .welcome-text:hover h4{
+    color: darkcyan;
+}
+
+.welcome .box-welcome .card-welcome .welcome-text:hover p{
+    color: white;
+}
+
+@media only screen and (max-width:890px){
+    .welcome .box-welcome .card-welcome{width: 100%;}
+    .welcome .box-welcome .card-welcome .welcome-text h4{font-size: 25px;}
+    .welcome .box-welcome .card-welcome .welcome-text p{font-size: 17px; line-height: 35px;}
+}
+
+.logo {
+    width: 15%;
+    height: 15%;
+}
+
+.services {
+    width: 50%;
+    margin:auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Florencesans Black', sans-serif;
+    font-weight: normal;
+    color: darkcyan;
+}
+
+#services hr{
+    background: darkcyan;
+    width: 20%;
+    height: 3px;
+    margin: 0 auto;
+}
+
+.one-third {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.box {
+    width: 480px;
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    border: 5px solid darkcyan;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    transform: scale(0);
+    transition: .3s ease;
+    text-align: center;
+}
+
+.box:hover .capa {
+    transform: scale(1);
+}
+.box img:hover {
+    filter: blur(5px);
+}
+
+/** ARTICLES**/
+.articles{
+	width: 100%;
+	padding:50px 0px;
+	background: #fff;
+}
+.articles h2{
+	display: flex;
+	justify-content: center;
+    margin:50px 0px;
+    font-family: 'Florencesans Black', sans-serif;
+	font-size: 50px;
+	color: darkcyan;
+	font-weight: 300;
+}
+.content-cards{
+	width: 100%;
+	margin:auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.content-cards .card{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background: gray;
+	margin:20px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.content-cards .card .card-content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background: #000;
+	border-radius: 10px;
+	padding:10px;
+}
+.content-cards .card .card-content h4{
+	color: #fff;
+	margin:20px 0px;
+	font-size: 17px;
+}
+.content-cards .card .card-content p{
+	color: #fff;
+    line-height: 30px;
+    font-family: 'Futura LT', sans-serif;
+	font-size: 15px;
+}
+.content-cards .card img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	object-fit: cover;
+	transition: 1s;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0% 50%);
+}
+.content-cards .card:hover img{
+	clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%, 100% 50%);
+}
+
+/** Fundadores **/
+.fundadores{
+	position: relative;
+	width: 100%;
+	margin-top: 150px;
+	height: 100vh;
+}
+.fundadores > h2{
+	position: absolute;
+	top: 20px;
+	width: inherit;
+	display: flex;
+	justify-content: center;
+	z-index: 10;
+	font-size: 40px;
+    font-weight: 300;
+    font-family: 'Florencesans Black', sans-serif;
+	color: darkcyan;
+}
+.content-fundadores{
+	display: flex;
+	width: 100%;
+    height: 100%;
+}
+
+.content-fundadores h2{
+    font-family: 'Florencesans Black', sans-serif;
+}
+
+.fundadores .fundador1-container{
+	position: relative;
+	flex-grow: 1;
+	transition: 1s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background: white;
+	cursor: pointer;
+}
+.fundadores .fundador1-container:hover{
+	flex-grow: 5;
+}
+.fundadores .fundador1-container .card{
+	max-width: 300px;
+	text-align: center;
+	transition: 0.5s;
+}
+.fundador1-container .card .fundador1-img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin:0 auto;
+}
+.fundador1-container .card .fundador1-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.fundador1-container .card h2{
+	margin:30px 0px;
+	color: darkcyan;
+	font-weight: 300;
+}
+.fundador1-container .card > a{
+	width: 150px;
+	height: 50px;
+	border:1px solid #fff;
+	background: darkcyan;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	padding:10px;
+    transition: 0.5s ease-in-out;
+}
+.fundador1-container .card > a:hover{
+	background: white;
+	border:1px solid ;
+	color: darkcyan;
+}
+
+/******** Fundador *********/
+.fundadores .fundador2-container{
+	position: relative;
+	flex-grow: 1;
+	transition: 1s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background: darkcyan;
+	cursor: pointer;
+}
+.fundadores .fundador2-container:hover{
+	flex-grow: 5;
+}
+.fundadores .fundador2-container .card{
+	max-width: 300px;
+	text-align: center;
+	transition: 0.5s;
+}
+.fundador2-container .card .fundador2-img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin:0 auto;
+}
+.fundador2-container .card .fundador2-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.fundador2-container .card h2{
+	margin:30px 0px;
+	color: #fff;
+	font-weight: 300;
+}
+.fundador2-container .card > a{
+	width: 150px;
+	height: 50px;
+	border:1px solid #fff;
+	background: white;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 20px;
+	color: darkcyan;
+	text-align: center;
+	padding:10px;
+    transition: 0.5s ease-in-out;
+}
+.fundador2-container .card > a:hover{
+	background: darkcyan;
+	border:1px solid;
+	color: white;
+}
+
+/** Fundadores **/
+
+/* FOOTER */
+
+footer {
+    background: darkcyan;
+    padding-bottom: 3%;
+    padding-top: 1%;
+}
+
+.imgfooter {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hfooter {
+    text-align: center;
+    font-size: medium;
+    font-style: italic;
+}
+
+.pfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
